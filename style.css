@@ -6,6 +6,12 @@ body {
   background-color: rgb(49, 49, 49);
 }
 
+.mensaje {
+  color: #ffffff;
+  text-align:center;
+
+}
+
 .wrap {
   display: flex;
   flex-direction: column;
