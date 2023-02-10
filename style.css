@@ -108,3 +108,14 @@ footer {
   text-align: center;
   animation: pop-in 1s;
 }
+
+.textoScore {
+  font-size: 30px;
+  color: white;
+  text-align: right;
+}
+#score {
+  font-size: 30px;
+  color: white;
+  text-align: right;
+}

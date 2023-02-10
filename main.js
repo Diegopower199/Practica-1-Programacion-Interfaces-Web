@@ -140,6 +140,7 @@ function updateLaser($container){
         const index = enemies.indexOf(enemy);
         enemies.splice(index,1);
         $container.removeChild(enemy.$enemy);
+        document.getElementById("score").innerHTML = parseInt(document.getElementById("score").innerHTML ) + 20; 
       }
     }
   }
@@ -163,6 +164,7 @@ function updateEnemyLaser($container){
     enemyLaser.y += 2;
     if (enemyLaser.y > GAME_HEIGHT-30){
       deleteLaser(enemyLasers, enemyLaser, enemyLaser.$enemyLaser);
+      
     }
     const enemyLaser_rectangle = enemyLaser.$enemyLaser.getBoundingClientRect();
     const spaceship_rectangle = document.querySelector(".player").getBoundingClientRect();
