@@ -206,6 +206,7 @@ function KeyRelease(event) {
 // Main Update Function
 function update(){
 
+
   if (STATE.gameOver === false) {
     updatePlayer();
     updateEnemies($container);
@@ -246,3 +247,4 @@ createEnemies($container);
 window.addEventListener("keydown", KeyPress);
 window.addEventListener("keyup", KeyRelease);
 update();
+

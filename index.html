@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Invaders</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,8 +9,15 @@
         <h1>Space Invaders</h1>
         <p>Para jugar debes utilizar tecla flecha a la izquierda y tecla a la derecha. y S y el espacio para disparar <br> Disfruta!!!!!</p>
     </div>
+
     
     <div class="wrap">
+
+        <audio id="musica" autoplay loop>
+            <source src="music/feed-the-machine-classic-arcade-game-116846.mp3">
+        </audio>
+
+
         <header>Space Invaders</header>
         <div class="game-wrapper">
             <div class="main"></div>
@@ -30,6 +34,7 @@
 
                 <p class="textoScore">Score:</p>
                 <div id="score">0</div>
+
         </div>
         <script src="main.js"></script>
         <footer></footer>
